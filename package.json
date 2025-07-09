@@ -1,0 +1,12 @@
+{
+  "name": "capacitor-sqlite-drivers",
+  "private": true,
+  "packageManager": "npm@8.3.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "affected:build": "turbo run build --since=origin/main"
+  }
+}

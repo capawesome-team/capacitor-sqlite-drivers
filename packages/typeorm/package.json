@@ -1,0 +1,13 @@
+{
+  "name": "@capawesome/capacitor-sqlite-typeorm",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robin Genz <mail@robingenz.dev>",
+  "license": "MIT",
+  "description": "",
+  "peerDependencies": {
+    "@capawesome-team/capacitor-sqlite": "0.0.1"
+  }
+}
