@@ -8,6 +8,6 @@
   "license": "MIT",
   "description": "",
   "peerDependencies": {
-    "@capawesome-team/capacitor-sqlite": "0.0.1"
+    "@capawesome-team/capacitor-sqlite": ">=0.1.0"
   }
 }
