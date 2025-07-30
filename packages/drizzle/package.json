@@ -8,6 +8,10 @@
   "license": "MIT",
   "description": "",
   "peerDependencies": {
-    "@capawesome-team/capacitor-sqlite": ">=0.1.0"
+    "@capawesome-team/capacitor-sqlite": ">=0.1.0",
+    "drizzle-orm": "0.44.4"
+  },
+  "devDependencies": {
+    "typescript": "4.1.5"
   }
 }
