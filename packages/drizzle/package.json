@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@capacitor/core": "8.0.0",
-    "@capawesome-team/capacitor-sqlite": ">=0.1.0",
+    "@capawesome-team/capacitor-sqlite": "0.3.3",
     "@ionic/eslint-config": "0.4.0",
     "drizzle-orm": "0.45.1",
     "eslint": "8.57.0",
@@ -57,8 +57,8 @@
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "@capawesome-team/capacitor-sqlite": ">=0.1.0",
-    "drizzle-orm": ">=0.45.0"
+    "@capawesome-team/capacitor-sqlite": "~0.3.0",
+    "drizzle-orm": "~0.45.0"
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"

@@ -46,7 +46,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capawesome-team/capacitor-sqlite": ">=0.1.0",
+    "@capawesome-team/capacitor-sqlite": "0.3.3",
     "@ionic/eslint-config": "0.4.0",
     "eslint": "8.57.0",
     "kysely": "0.27.6",
@@ -56,8 +56,8 @@
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "@capawesome-team/capacitor-sqlite": ">=0.1.0",
-    "kysely": ">=0.27.0"
+    "@capawesome-team/capacitor-sqlite": "~0.3.0",
+    "kysely": "~0.28.0"
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
