@@ -5,6 +5,12 @@ Drizzle ORM adapter for [`@capawesome-team/capacitor-sqlite`](https://capawesome
 > [!WARNING]
 > This package is in early development and may have breaking changes. Feedback and contributions are welcome!
 
+<div class="capawesome-z29o10a">
+  <a href="https://cloud.capawesome.io/" target="_blank">
+    <img alt="Deliver Live Updates to your Capacitor app with Capawesome Cloud" src="https://cloud.capawesome.io/assets/banners/cloud-build-and-deploy-capacitor-apps.png?t=1" />
+  </a>
+</div>
+
 ## Installation
 
 ```bash

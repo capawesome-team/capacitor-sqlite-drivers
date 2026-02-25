@@ -57,7 +57,7 @@
   },
   "peerDependencies": {
     "@capawesome-team/capacitor-sqlite": "~0.3.0",
-    "kysely": "~0.28.0"
+    "kysely": "^0.28.0"
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"

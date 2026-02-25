@@ -58,7 +58,7 @@
   },
   "peerDependencies": {
     "@capawesome-team/capacitor-sqlite": "~0.3.0",
-    "drizzle-orm": "~0.45.0"
+    "drizzle-orm": "^0.45.0"
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
