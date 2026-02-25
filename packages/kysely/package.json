@@ -61,5 +61,8 @@
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
