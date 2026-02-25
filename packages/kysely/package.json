@@ -1,7 +1,7 @@
 {
-  "name": "@capawesome/capacitor-sqlite-drizzle",
+  "name": "@capawesome/capacitor-sqlite-kysely",
   "version": "0.0.1",
-  "description": "Drizzle ORM adapter for the Capawesome SQLite plugin.",
+  "description": "Kysely dialect for the Capawesome SQLite plugin.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -31,7 +31,7 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "drizzle",
+    "kysely",
     "orm",
     "sqlite"
   ],
@@ -46,11 +46,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/core": "8.0.0",
     "@capawesome-team/capacitor-sqlite": ">=0.1.0",
     "@ionic/eslint-config": "0.4.0",
-    "drizzle-orm": "0.45.1",
     "eslint": "8.57.0",
+    "kysely": "0.27.6",
     "prettier": "3.4.2",
     "rimraf": "6.1.2",
     "rollup": "4.53.3",
@@ -58,7 +57,7 @@
   },
   "peerDependencies": {
     "@capawesome-team/capacitor-sqlite": ">=0.1.0",
-    "drizzle-orm": ">=0.45.0"
+    "kysely": ">=0.27.0"
   },
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
