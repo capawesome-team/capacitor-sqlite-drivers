@@ -14,7 +14,7 @@ Kysely dialect for [`@capawesome-team/capacitor-sqlite`](https://capawesome.io/p
 ## Installation
 
 ```bash
-npm install @capawesome/capacitor-sqlite-kysely kysely@^0.28.0
+npm install @capawesome/capacitor-sqlite-kysely kysely
 ```
 
 ## Usage
