@@ -1,5 +1,10 @@
 import type { SqlitePlugin, Value } from '@capawesome-team/capacitor-sqlite';
 import type { CompiledQuery, DatabaseConnection, QueryResult } from 'kysely';
+import { RawNode, SelectQueryNode } from 'kysely';
+
+// Raw SQL has no query node, so detect statements that return rows by their keyword.
+const RAW_ROW_RETURNING_STATEMENT =
+  /^\s*(SELECT|WITH|PRAGMA|VALUES|EXPLAIN)\b|\bRETURNING\b/i;
 
 export class CapacitorSqliteConnection implements DatabaseConnection {
   private readonly client: SqlitePlugin;
@@ -14,7 +19,7 @@ export class CapacitorSqliteConnection implements DatabaseConnection {
     const { sql, parameters } = compiledQuery;
     const values = parameters as Value[];
 
-    if (this.isQuery(sql)) {
+    if (this.returnsRows(compiledQuery)) {
       const result = await this.client.query({
         databaseId: this.databaseId,
         statement: sql,
@@ -47,9 +52,14 @@ export class CapacitorSqliteConnection implements DatabaseConnection {
     throw new Error('Streaming is not supported.');
   }
 
-  private isQuery(sql: string): boolean {
-    const upper = sql.trimStart().toUpperCase();
-    return upper.startsWith('SELECT') || upper.includes('RETURNING');
+  private returnsRows({ query, sql }: CompiledQuery): boolean {
+    if (RawNode.is(query)) {
+      return RAW_ROW_RETURNING_STATEMENT.test(sql);
+    }
+    return (
+      SelectQueryNode.is(query) ||
+      ('returning' in query && query.returning !== undefined)
+    );
   }
 
   private rowsToObjects(
