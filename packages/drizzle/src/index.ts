@@ -200,7 +200,7 @@ async function executeQuery(
   });
 
   if (method === 'get') {
-    return { rows: result.rows[0] ?? [] };
+    return { rows: result.rows[0] };
   }
 
   return { rows: result.rows };
