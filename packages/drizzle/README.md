@@ -14,7 +14,7 @@ Drizzle ORM adapter for [`@capawesome-team/capacitor-sqlite`](https://capawesome
 ## Installation
 
 ```bash
-npm install @capawesome/capacitor-sqlite-drizzle drizzle-orm@^0.45.0
+npm install @capawesome/capacitor-sqlite-drizzle drizzle-orm
 ```
 
 ## Usage
