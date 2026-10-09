@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+### Patch Changes
+
+- [`216cc4cd1f1840c9c779e7a8f9adcc88cbcd9f42`](https://github.com/capawesome-team/capacitor-sqlite-drivers/commit/216cc4cd1f1840c9c779e7a8f9adcc88cbcd9f42) ([#4](https://github.com/capawesome-team/capacitor-sqlite-drivers/pull/4)): feat: support `@capawesome-team/capacitor-sqlite` v0.5.x
+
 ## 0.1.0
 
 ### Minor Changes
