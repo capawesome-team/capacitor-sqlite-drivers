@@ -4,6 +4,9 @@ updates:
     directory: /
     schedule:
       interval: quarterly
+    ignore:
+      - dependency-name: changesets/action
+        update-types: ['version-update:semver-major']
     groups:
       github-actions:
         patterns:
