@@ -26,9 +26,11 @@ jobs:
     if: github.repository == 'capawesome-team/capacitor-sqlite-drivers'
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
       - name: Set up Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Update npm for OIDC trusted publishing
@@ -44,7 +46,8 @@ jobs:
         run: npm ci
       - name: Create Release Pull Request or Publish to npm
         id: changesets
-        uses: changesets/action@v1
+        uses: changesets/action@a45c4d594aa4e2c509dc14a9f2b3b67ba3780d0d # v1.9.0
+
         with:
           publish: npm run release
           commit: "chore(release): publish"
